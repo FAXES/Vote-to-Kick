@@ -98,7 +98,7 @@ Citizen.CreateThread(function()
                 if tPlayer ~= nil then
                     DropPlayer(tPlayer, kickMessage)
                     if playerKickMessages then
-                    TriggerClientEvent("chatMessage", -1, "^*^3Player: " GetPlayerName(tPlayer) .. " was vote ^1kicked ^3from the server")
+                    TriggerClientEvent("chatMessage", -1, "^*^3Player: " .. GetPlayerName(tPlayer) .. " was vote ^1kicked ^3from the server")
                     end
                 end
                 voteActive = false
